@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <meta name="keywords" content="Gerador de senhas, gerador password">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="logo" src="assets/logo (1).png" alt="Gerador de senhas logo">
+
+    <main class="container-input">
+        <span>Tamanho<span id="valor"></span> caracteres</span>
+        <input type="range" class="slider" id="slider" min="5" max="25" value="15">
+
+        <button id="button" class="button-cta" onclick="ganeratePassword()">Gerar senha</button>
+    </main>
+        <div id="container-password" onclick="copyPassword()" class="container-password hide">
+            <span class="title">Sua senha gerada foi:</span>
+            <span id="password" class="password">123123123123</span>
+            <span class="tooltip">Clique na senha para copiar 👆</span>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
